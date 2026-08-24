@@ -65,6 +65,21 @@
     transform: translateY(-2px);
   }
 
+  .glow-lilac {
+    box-shadow: 0 0 24px rgba(224,176,255,0.4), 0 0 2px rgba(224,176,255,0.6) inset;
+  }
+  .btn-lilac {
+    background: linear-gradient(135deg, #E0B0FF 0%, #C9A6F5 50%, #5B2E8F 100%);
+    transition: all .35s ease;
+  }
+  .btn-lilac:hover {
+    box-shadow: 0 0 40px rgba(224,176,255,0.7), 0 0 12px rgba(224,176,255,0.85);
+    transform: translateY(-2px);
+  }
+  .moon-glow {
+    filter: drop-shadow(0 0 14px rgba(224,176,255,0.55));
+  }
+
   .card-hover { transition: all .4s ease; }
   .card-hover:hover {
     transform: translateY(-6px);
@@ -204,29 +219,41 @@
 <!-- PORTAL -->
 <section id="portal" class="relative py-24 px-6">
   <div class="max-w-5xl mx-auto text-center mb-12">
-    <p class="font-ui uppercase tracking-[0.35em] text-gold/70 text-xs mb-4">Tratamento Coletivo</p>
-    <h2 class="font-display text-4xl md:text-5xl">O Grande Portal 08/08</h2>
+    <p class="font-ui uppercase tracking-[0.35em] text-gold/70 text-xs mb-4">Fechamento de Ciclo · Tratamento Coletivo</p>
+    <h2 class="font-display text-4xl md:text-5xl">O Grande Portal 09/09</h2>
   </div>
 
-  <div class="max-w-3xl mx-auto rounded-3xl p-[1.5px] bg-gradient-to-br from-gold via-purplex to-gold glow-gold">
+  <div class="max-w-3xl mx-auto rounded-3xl p-[1.5px] bg-gradient-to-br from-lilac via-purplex to-purplex glow-lilac">
     <div class="rounded-3xl bg-panel px-8 md:px-14 py-12 relative overflow-hidden">
-      <svg class="sigil absolute -left-16 -bottom-16 opacity-10" width="260" height="260" viewBox="0 0 200 200">
-        <circle cx="100" cy="100" r="90" stroke="#D4AF37" stroke-width="0.6" fill="none"/>
-        <circle cx="100" cy="100" r="60" stroke="#E0B0FF" stroke-width="0.6" fill="none"/>
+      <!-- moon phases: cheia -> minguante -> nova, simbolizando o fechamento de ciclo -->
+      <svg class="absolute -left-14 -bottom-14 opacity-[0.14]" width="240" height="240" viewBox="0 0 200 200" fill="none">
+        <circle cx="100" cy="100" r="70" stroke="#E0B0FF" stroke-width="0.6"/>
+        <circle cx="100" cy="100" r="45" fill="#E0B0FF" opacity="0.5"/>
+        <path d="M100 55a45 45 0 000 90 36 36 0 010-90z" fill="#160A2C"/>
       </svg>
-      <h3 class="font-display text-3xl text-goldbright mb-4">Firme sua vitória. Blinde o seu ouro.</h3>
-      <p class="text-lilac/85 font-ui font-light leading-relaxed">
-        Um trabalho coletivo, de altíssima voltagem espiritual, para quebrar bloqueios de escassez hereditária e blindar a sua prosperidade contra a inveja alheia. O universo abre uma janela, e ela não fica aberta por muito tempo.
+      <svg class="sigil absolute -right-10 -top-10 opacity-10" width="180" height="180" viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="80" stroke="#E0B0FF" stroke-width="0.5" fill="none" stroke-dasharray="2 6"/>
+      </svg>
+      <div class="flex justify-center mb-6">
+        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" class="moon-glow">
+          <path d="M14 2.5A9.5 9.5 0 1021.5 14 7.8 7.8 0 0114 2.5z" fill="#E0B0FF"/>
+        </svg>
+      </div>
+      <h3 class="font-display text-3xl text-center text-lilac mb-4">Feche o ciclo. Liberte o que não é mais seu.</h3>
+      <p class="text-white/75 font-ui font-light leading-relaxed text-center">
+        Um trabalho coletivo, de altíssima voltagem espiritual, para encerrar ciclos que já cumpriram seu propósito, dissolver amarras cármicas e limpar tudo que ainda te prende ao passado. O Portal 9/9 é a porta do encerramento: o que precisa morrer, morre — para que o novo tenha espaço para nascer. O universo abre uma janela, e ela não fica aberta por muito tempo.
       </p>
-      <ul class="mt-8 space-y-3 font-ui text-sm text-white/85">
-        <li class="flex items-start gap-3"><span class="text-gold mt-0.5">✦</span> Quebra de bloqueios financeiros e familiares</li>
-        <li class="flex items-start gap-3"><span class="text-gold mt-0.5">✦</span> Blindagem energética contra inveja e olho gordo</li>
-        <li class="flex items-start gap-3"><span class="text-gold mt-0.5">✦</span> Alinhamento vibracional para dinheiro, sucesso e estabilidade</li>
+      <ul class="mt-8 space-y-3 font-ui text-sm text-white/85 max-w-md mx-auto">
+        <li class="flex items-start gap-3"><span class="text-lilac mt-0.5">☾</span> Encerramento de ciclos cármicos e vínculos que já cumpriram seu papel</li>
+        <li class="flex items-start gap-3"><span class="text-lilac mt-0.5">☾</span> Liberação de mágoas, culpas e apegos que travam sua evolução</li>
+        <li class="flex items-start gap-3"><span class="text-lilac mt-0.5">☾</span> Alinhamento com seu propósito de vida e a verdade que vem depois da virada</li>
       </ul>
-      <a href="https://wa.me/5519981981399?text=Ol%C3%A1%20Mari!%20Quero%20garantir%20minha%20vaga%20no%20Grande%20Portal%2008%2F08.%20Como%20fa%C3%A7o%20para%20participar%3F%20%E2%9C%A8%F0%9F%99%8F" target="_blank" class="btn-gold text-deep font-ui font-semibold px-8 py-4 rounded-full inline-block mt-10 glow-gold">
-        Garantir Minha Vaga no Próximo Portal
-      </a>
-      <p class="mt-4 text-xs text-lilac/50 font-ui">Vagas limitadas · Inscrições via WhatsApp</p>
+      <div class="flex justify-center">
+        <a href="https://wa.me/5519981981399?text=Ol%C3%A1%20Mari!%20Quero%20garantir%20minha%20vaga%20no%20Grande%20Portal%2009%2F09.%20Como%20fa%C3%A7o%20para%20participar%3F%20%E2%9C%A8%F0%9F%99%8F" target="_blank" class="btn-lilac text-deep font-ui font-semibold px-8 py-4 rounded-full inline-block mt-10 glow-lilac">
+          Garantir Minha Vaga na Virada do Portal
+        </a>
+      </div>
+      <p class="mt-4 text-xs text-lilac/50 font-ui text-center">Vagas limitadas · Inscrições via WhatsApp</p>
     </div>
   </div>
 </section>
